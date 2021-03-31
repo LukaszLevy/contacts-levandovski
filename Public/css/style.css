@@ -725,6 +725,7 @@ option{
       place-items: center;
       text-align: center;
       width: max-content;
+      max-width: 220px;
       font-size: 12px;
 }
 .emp-bas-icn{
