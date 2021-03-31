@@ -1,0 +1,91 @@
+[{
+  "Imie": "Adam",
+  "Nazwisko": "Adamowicz",
+  "Telefon": "000000000",
+  "Grupa": "Praca"
+},{
+  "Imie": "Aleksander",
+  "Nazwisko": "Kwaśniowski",
+  "Telefon": "111111111",
+  "Grupa": "Znajomi"
+},{
+  "Imie": "Weronika",
+  "Nazwisko": "Kas",
+  "Telefon": "222222222",
+  "Grupa": "Rodzina"
+},{
+  "Imie": "Święty",
+  "Nazwisko": "Mikołaj",
+  "Telefon": "234567654",
+  "Grupa": "Inne"
+},{
+  "Imie": "Lukasz",
+  "Nazwisko": "Levy",
+  "Telefon": "123456543",
+  "Grupa": "Praca"
+},{
+  "Imie": "Zajączek",
+  "Nazwisko": "Wielkanocny",
+  "Telefon": "123432234",
+  "Grupa": "Znajomi"
+},{
+  "Imie": "Dziadek",
+  "Nazwisko": "Mróz",
+  "Telefon": "234234234",
+  "Grupa": "Rodzina"
+},{
+  "Imie": "Bill",
+  "Nazwisko": "Gotes",
+  "Telefon": "234543222",
+  "Grupa": "Inne"
+},{
+  "Imie": "Wróżka",
+  "Nazwisko": "Zębuszka",
+  "Telefon": "234567654",
+  "Grupa": "Praca"
+},{
+  "Imie": "Jason",
+  "Nazwisko": "Bourne",
+  "Telefon": "345654323",
+  "Grupa": "Znajomi"
+},{
+  "Imie": "James",
+  "Nazwisko": "Bond",
+  "Telefon": "000000007",
+  "Grupa": "Rodzina"
+},{
+  "Imie": "Krystyna",
+  "Nazwisko": "Pawłowiczowa",
+  "Telefon": "394652258",
+  "Grupa": "Inne"
+},{
+  "Imie": "Jarosław",
+  "Nazwisko": "Kaczka",
+  "Telefon": "159753654",
+  "Grupa": "Praca"
+},{
+  "Imie": "Robert",
+  "Nazwisko": "Gol",
+  "Telefon": "852321789",
+  "Grupa": "Rodzina"
+},{
+  "Imie": "Elon",
+  "Nazwisko": "Musiał",
+  "Telefon": "852963741",
+  "Grupa": "Znajomi"
+},{
+  "Imie": "Zygmunt",
+  "Nazwisko": "Fojdowiak",
+  "Telefon": "789456123",
+  "Grupa": "Inne"
+},{
+  "Imie": "Juliusz",
+  "Nazwisko": "Cezar",
+  "Telefon": "999999999",
+  "Grupa": "Praca"
+},{
+  "Imie": "Renifer",
+  "Nazwisko": "Rudolf",
+  "Telefon": "666666666",
+  "Grupa": "Rodzina"
+}]
