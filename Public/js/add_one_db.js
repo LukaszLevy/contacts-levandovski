@@ -27,7 +27,7 @@ function add_one() {
     communicat("on", "Dodaje kontakt do bazy");
     // zapytanie do serwera
     $.ajax({
-      url: "http://localhost:8000/ado",
+      url: "/ado",
       contentType: "application/json",
       dataType: "json",
       processData: false,

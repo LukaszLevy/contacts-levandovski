@@ -10,7 +10,7 @@ function get_trial_dev() {
 function get_trial() {
     communicat('on', 'Dodaje kontakty z bazy testowej...');
     $.ajax({
-        url: "http://localhost:8000/trial",
+        url: "/trial",
         contentType: "application/json",
         dataType: "json",
         type: "GET",

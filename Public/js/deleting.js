@@ -13,7 +13,7 @@ function delete_all_dev() {
 function delete_all() {
   communicat("on", "Usuwam całą bazę danych");
   $.ajax({
-    url: "http://localhost:8000/del",
+    url: "/del",
     contentType: "application/json",
     dataType: "json",
     processData: false,
@@ -46,7 +46,7 @@ function delete_one(el) {
   currentId = $(a[currentIndex]).attr('id');
   // zapytanie do serwera
   $.ajax({
-    url: "http://localhost:8000/do",
+    url: "/do",
     contentType: "application/json",
     dataType: "json",
     type: "POST",
@@ -92,7 +92,7 @@ function remove_selected_from_db_dev( arr ) {
 function remove_selected_from_db(arr) {
   communicat(`on`, `Usuwam wybrane kontakty z bazy`);
   $.ajax({
-    url: "http://localhost:8000/dm",
+    url: "/dm",
     contentType: "application/json",
     dataType: "json",
     type: "POST",

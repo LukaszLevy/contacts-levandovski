@@ -36,7 +36,7 @@ import {
       let byNext = wbyNext(by);
       // zapytanie do serwera
       $.ajax({
-        url: "http://localhost:8000/sort",
+        url: "/sort",
         contentType: "application/json",
         dataType: "json",
         processData: false,
