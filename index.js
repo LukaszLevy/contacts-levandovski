@@ -52,6 +52,6 @@ app.post('/dm', async function(req, res){
 
 
 // listen
-app.listen(port, () => {
+app.listen(port, 'localhost', () => {
   console.log(`Działający port ${port}!`);
 });
