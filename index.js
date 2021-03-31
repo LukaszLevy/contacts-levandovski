@@ -1,5 +1,6 @@
 // express
 
+
 // const, require
 require('dotenv').config();
 const express = require("express");
@@ -7,20 +8,16 @@ const serveStatic = require('serve-static');
 const app = express();
 const port = process.env.PORT || 8000;
 const getdb = require('./mongo');
-const ipfilter = require('express-ipfilter').IpFilter;
-const ips = ['127.0.0.1'];
+
+
 // use
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
-  ipfilter(ips, {mode: 'allow'});
   express.urlencoded({ extended: false });
   next();
 });
-// app.use(express.urlencoded({ extended: false }))
 app.use(express.json());
 app.use(serveStatic('Public', { 'index': ['index.html', 'index.htm'] }));
-
-
 
 
 // get
@@ -33,12 +30,13 @@ app.get('/trial', async function(req, res){
 })
 
 
+// post
 app.post('/del', async function(req, res){
+  ipfilter(ips, {mode: 'allow'});
     getdb.delete_db_all(req, res);
  })
 
-
- app.post('/ado', async function(req, res){
+app.post('/ado', async function(req, res){
   getdb.add_one_db(req, res);
 })
 
