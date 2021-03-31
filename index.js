@@ -16,9 +16,10 @@ app.use((req, res, next) => {
 });
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json());
-app.use(serveStatic('Public', { 'index': ['index.html', 'index.htm'] }))
+app.use(serveStatic('Public', { 'index': ['index.html', 'index.htm'] }));
+app.use(ipfilter(ips, {mode: 'allow'}))
 // get
-app.get('/db', ipfilter(ips, {mode: 'allow'}), async function(req, res){
+app.get('/db', async function(req, res){
    getdb.get_from_database_all(req, res);
 })
 
