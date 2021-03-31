@@ -32,7 +32,6 @@ app.get('/trial', async function(req, res){
 
 // post
 app.post('/del', async function(req, res){
-  ipfilter(ips, {mode: 'allow'});
     getdb.delete_db_all(req, res);
  })
 
