@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 const getdb = require('./mongo');
 const ipfilter = require('express-ipfilter').IpFilter;
-const ips = ['127.0.0.1'];
+const ips = ['localhost'];
 // use
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -17,7 +17,6 @@ app.use((req, res, next) => {
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json());
 app.use(serveStatic('Public', { 'index': ['index.html', 'index.htm'] }));
-app.set('trust proxy', true);
 app.use(ipfilter(ips, {mode: 'allow'}))
 // get
 app.get('/db', async function(req, res){
